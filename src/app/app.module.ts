@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainBodyComponent } from './main-body/main-body.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { CourseComponent } from './course/course.component';
-import { FacultyComponent } from './faculty/faculty.component';
-import { ResearchComponent } from './research/research.component';
+import { CoursesComponent } from './academic/courses/courses.component';
+import { FacultyComponent } from './academic/faculty/faculty.component';
+import { ResearchComponent } from './academic/research/research.component';
+import { AcademicComponent } from './academic/academic.component';
 
 @NgModule({
   declarations: [
@@ -16,17 +17,16 @@ import { ResearchComponent } from './research/research.component';
     MainBodyComponent,
     HeaderComponent,
     FooterComponent,
-    CourseComponent,
+    CoursesComponent,
     FacultyComponent,
-    ResearchComponent
+    ResearchComponent,
+    AcademicComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
