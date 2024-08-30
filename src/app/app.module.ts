@@ -9,7 +9,6 @@ import { FooterComponent } from './footer/footer.component';
 import { CoursesComponent } from './academic/courses/courses.component';
 import { FacultyComponent } from './academic/faculty/faculty.component';
 import { ResearchComponent } from './academic/research/research.component';
-import { AcademicComponent } from './academic/academic.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { AcademicComponent } from './academic/academic.component';
     FooterComponent,
     CoursesComponent,
     FacultyComponent,
-    ResearchComponent,
-    AcademicComponent
+    ResearchComponent
   ],
   imports: [
     BrowserModule,
